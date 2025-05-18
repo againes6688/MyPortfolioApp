@@ -31,3 +31,26 @@ A simple web app built with Flask that authenticates users via LinkedIn OAuth 2.
 ```bash
 git clone https://github.com/YOUR_USERNAME/linkedin-oauth-flask.git
 cd linkedin-oauth-flask
+
+
+### Create the file:
+
+```bash
+touch .env
+
+### Open it and add the following:
+
+LINKEDIN_CLIENT_ID=your_linkedin_client_id
+LINKEDIN_CLIENT_SECRET=your_linkedin_client_secret
+LINKEDIN_REDIRECT_URI=http://localhost:8080/callback
+
+##🔒 Replace the values with your actual LinkedIn Developer credentials. This file should never be committed to Git.
+
+ ##Run the Flask App
+```bash
+python app.py
+
+##Then open your browser and go to:
+
+http://localhost:8080
+##You’ll be redirected to LinkedIn to authorize the app. If successful, you’ll get an access token printed in your terminal.
