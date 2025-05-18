@@ -1,3 +1,5 @@
+#MyPortfolioApp
+
 🔐 LinkedIn OAuth Integration with Flask
 A simple web app built with Flask that authenticates users via LinkedIn OAuth 2.0 using the Authorization Code Flow with PKCE, and retrieves a secure access token.
 
