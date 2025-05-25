@@ -90,7 +90,7 @@ def exchange_code_for_token(auth_code):
 
     headers = {'Content-Type': 'application/x-www-form-urlencoded'}
 
-    response = requests.post(token_url, headers=headers, data=data)
+    response = requests.post(token_url, headers=headers, data=data, timeout=60)
     if response.status_code == 200:
         access_token = response.json().get('access_token')
         print(f"Access Token: {access_token}")
